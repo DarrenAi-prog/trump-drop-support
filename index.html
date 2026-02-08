@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trump Drop — Support</title>
+  <meta name="description" content="Support page for Trump Drop." />
+  <style>
+    :root{
+      --bg:#070b18;
+      --text:#e9ecff;
+      --muted:#b7bfdc;
+      --accent:#ffcc33;
+      --link:#7fb2ff;
+      --border: rgba(255,255,255,0.10);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      background: radial-gradient(1200px 800px at 50% 0%, rgba(127,178,255,.16), transparent 60%), var(--bg);
+      color:var(--text);
+      line-height:1.45;
+    }
+    .wrap{max-width:880px;margin:0 auto;padding:48px 18px}
+    .hero{display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+    h1{margin:0;font-size:34px;letter-spacing:.2px}
+    .tag{display:inline-block;margin-top:10px;padding:6px 10px;border:1px solid var(--border);border-radius:999px;color:var(--muted);font-size:13px}
+    .grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:22px}
+    @media (min-width:760px){.grid{grid-template-columns:1fr 1fr}}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));border:1px solid var(--border);border-radius:16px;padding:18px}
+    .card h2{margin:0 0 10px 0;font-size:18px}
+    p{margin:8px 0;color:var(--muted)}
+    a{color:var(--link);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .btn{display:inline-block;padding:10px 12px;border-radius:12px;border:1px solid var(--border);background:rgba(255,255,255,.04);color:var(--text)}
+    footer{margin-top:26px;color:var(--muted);font-size:13px;border-top:1px solid var(--border);padding-top:16px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <div>
+        <h1>Trump Drop — Support</h1>
+        <div class="tag">Need help? You’re in the right place.</div>
+      </div>
+    </div>
+
+    <div class="grid">
+      <section class="card">
+        <h2>Contact</h2>
+        <p>Email support:</p>
+        <p><a href="mailto:support@example.com?subject=Trump%20Drop%20Support">support@example.com</a></p>
+        <p>Please include your iPhone model + iOS version and what happened.</p>
+      </section>
+
+      <section class="card">
+        <h2>Common fixes</h2>
+        <ul style="margin:10px 0 0 18px;color:var(--muted)">
+          <li>Force close the app and reopen.</li>
+          <li>Update iOS to the latest version available.</li>
+          <li>Restart your device.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Report a bug</h2>
+        <p>Send us steps to reproduce + what you expected vs. what happened (screenshots help).</p>
+      </section>
+
+      <section class="card">
+        <h2>Privacy</h2>
+        <p>We don’t collect personal data. If this changes, we’ll update our policy here.</p>
+        <a class="btn" href="privacy.html"><strong style="color:var(--accent)">Privacy Policy</strong></a>
+      </section>
+    </div>
+
+    <footer>
+      <div>© <span id="y"></span> Trump Drop</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
